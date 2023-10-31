@@ -1,0 +1,44 @@
+.hero__title {
+    @include title;
+}
+
+.hero__text {
+    @include text;
+}
+
+.hero__btn {
+    @include btn;
+}
+
+.btns_div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero__container {
+    padding-top: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 193px;
+}
+
+.hero__btn--active {
+    background-color: #B6B6B6;
+}
+
+@media screen and (max-width: 900px) {
+    .btns_div {
+        flex-direction: column;
+    }
+    
+    .hero__container {
+        text-align: center;
+    }
+
+    .hero__container {
+        flex-direction: column-reverse;
+    }
+}
